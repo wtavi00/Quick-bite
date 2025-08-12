@@ -4,3 +4,13 @@
 
 > 🚀 Designed for university students. Built for speed and simplicity.
 
+
+## Core Features for Web Backend
+### User Management
+- Sign up / Login (Students, Admin, Delivery Staff)
+- User roles: Customer, Admin, Delivery
+
+### Food Menu Management
+- CRUD for snacks, meals, combo deals
+-Categorized by price range, food type, and tags (e.g., healthy, spicy)
+
