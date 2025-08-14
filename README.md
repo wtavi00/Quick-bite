@@ -12,5 +12,9 @@
 
 ### Food Menu Management
 - CRUD for snacks, meals, combo deals
--Categorized by price range, food type, and tags (e.g., healthy, spicy)
+-Categorized by price range, food type, and tags.
+
+### Order System
+- Place, track, and cancel orders
+- Real-time status updates.
 
