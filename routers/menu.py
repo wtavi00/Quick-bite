@@ -13,3 +13,11 @@ def get_db():
         db.close()
 
   
+@router.post("/", response_model=MenuItemOut)
+def create_item(item: MenuItemCreate, db: Session = Depends(get_db)):
+    new_item = MenuItem(**item.dict())
+    db.add(new_item)
+    db.commit()
+    db.refresh(new_item)
+    return new_item
+
