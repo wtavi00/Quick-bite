@@ -12,7 +12,7 @@
 
 ### Food Menu Management
 - CRUD for snacks, meals, combo deals
--Categorized by price range, food type, and tags.
+- Categorized by price range, food type, and tags.
 
 ### Order System
 - Place, track, and cancel orders
