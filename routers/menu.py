@@ -21,3 +21,7 @@ def create_item(item: MenuItemCreate, db: Session = Depends(get_db)):
     db.refresh(new_item)
     return new_item
 
+
+@router.get("/", response_model=list[MenuItemOut])
+def list_items(db: Session = Depends(get_db)):
+    return db.query(MenuItem).all()
