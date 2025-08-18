@@ -21,3 +21,7 @@ def create_order(order: OrderCreate, db: Session = Depends(get_db)):
     db.refresh(new_order)
     return new_order
 
+@router.get("/", response_model=list[OrderOut])
+def list_orders(db: Session = Depends(get_db)):
+    return db.query(Order).all()
+    
