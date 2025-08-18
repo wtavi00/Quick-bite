@@ -18,3 +18,15 @@
 - Place, track, and cancel orders
 - Real-time status updates.
 
+### Discounts & Deals
+- Student discounts
+- Daily combo deals
+
+### Delivery Tracking
+- Assign delivery personnel
+- Status updates
+
+### Admin Dashboard
+- View orders, revenue, top items
+- Manage users and meals
+- Performance reports
