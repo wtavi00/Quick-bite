@@ -30,3 +30,9 @@
 - View orders, revenue, top items
 - Manage users and meals
 - Performance reports
+
+
+###APIs for Frontend or Mobile App
+- RESTful or GraphQL endpoints
+
+- 
