@@ -35,4 +35,18 @@
 ###APIs for Frontend or Mobile App
 - RESTful or GraphQL endpoints
 
-- 
+
+---
+
+## 📌 Features
+
+- ⚡ Fast delivery-focused API (15–20 min delivery model)
+- 👤 User registration (basic auth ready)
+- 📋 Menu creation and browsing
+- 🛒 Order placement and tracking
+- 🧱 Modular architecture (models, routes, schemas, services)
+- 📦 Docker-ready
+- 🛠️ Alembic setup for migrations (placeholder)
+
+---
+
