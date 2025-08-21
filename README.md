@@ -50,3 +50,99 @@
 
 ---
 
+## 🧱 Tech Stack
+
+- **Python 3.10**
+- **FastAPI** – Web framework
+- **SQLAlchemy** – ORM for database models
+- **Pydantic** – Data validation
+- **Uvicorn** – ASGI server
+- **Alembic** – (for migrations)
+- **SQLite** (dev) / **PostgreSQL** (prod-ready)
+- **Docker** – Containerization support
+
+---
+
+## 🚀 Getting Started
+
+### 📁 Clone the repo
+
+```bash
+git clone https://github.com/wtavi00/Quick-bite.git
+cd quickbite-backend
+```
+
+##📦 Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+## ⚙️ Set up environment variables
+### Create a .env file:
+```bash
+DATABASE_URL=sqlite:///./test.db
+```
+### Or connect to PostgreSQL:
+```bash
+DATABASE_URL=postgresql://username:password@localhost/quickbite
+```
+
+## 🧪 Run the app
+```bash
+uvicorn app.main:app --reload
+```
+API docs at: http://localhost:8000/docs
+
+## 🐳 Run with Docker
+```bash
+docker build -t quickbite-api .
+docker run -d -p 8000:8000 quickbite-api
+```
+
+## 🧪 API Overview
+
+| Endpoint          | Method | Description          |
+| ----------------- | ------ | -------------------- |
+| `/users/register` | POST   | Register new user    |
+| `/menu/`          | GET    | List all menu items  |
+| `/menu/`          | POST   | Create new menu item |
+| `/orders/`        | GET    | List all orders      |
+| `/orders/`        | POST   | Create a new order   |
+
+## 📂 Project Structure
+```bash
+quickbite-backend/
+│
+├── app/
+│   ├── main.py           # Entry point
+│   ├── models/           # SQLAlchemy models
+│   ├── schemas/          # Pydantic schemas
+│   ├── routes/           # API routes
+│   ├── services/         # Business logic (WIP)
+│   ├── db/               # Database connection
+│   └── auth/             # Auth logic (WIP)
+│
+├── tests/                # Test cases
+├── alembic/              # Migrations (placeholder)
+├── .env                  # Env vars
+├── Dockerfile            # Docker setup
+├── requirements.txt      # Dependencies
+└── README.md             # You are here
+```
+
+## 🎯 Future Roadmap
+- ✅ User registration
+- ⏳ JWT authentication
+- ⏳ Admin panel (add/edit menu)
+- ⏳ Order status updates
+- ⏳ SMS/email notifications
+- ⏳ Payment gateway integration
+- ⏳ Review system
+
+## Auther
+[Avijit Tarafder](https://github.com/wtavi00)
+
+## 📄 License
+[MIT License](https://github.com/wtavi00/Quick-bite/blob/main/LICENSE)
+
+
