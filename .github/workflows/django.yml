@@ -28,3 +28,7 @@ jobs:
     - name: Run Tests
       run: |
         python manage.py test
+
+    - uses: actions/setup-python@v3
+      with:
+        python-version: '3.8'
