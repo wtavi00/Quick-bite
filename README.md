@@ -2,6 +2,7 @@
 
 **Quickbite** is a fast, student-oriented food delivery service focused on affordability, health, and convenience. This is the backend system built using **FastAPI**, providing APIs for user management, menu browsing, and order placement.
 
+
 > 🚀 Designed for university students. Built for speed and simplicity.
 
 
@@ -69,7 +70,7 @@
 
 ```bash
 git clone https://github.com/wtavi00/Quick-bite.git
-cd quickbite-backend
+cd quick-bite
 ```
 
 ##📦 Install dependencies
@@ -85,6 +86,13 @@ DATABASE_URL=sqlite:///./test.db
 ### Or connect to PostgreSQL:
 ```bash
 DATABASE_URL=postgresql://username:password@localhost/quickbite
+```
+### Configure Environment
+```bash
+FLASK_ENV=development
+SECRET_KEY=your-secret-key
+DATABASE_URL=sqlite:///quickbite.db
+JWT_SECRET_KEY=your-jwt-secret
 ```
 
 ## 🧪 Run the app
@@ -111,23 +119,37 @@ docker run -d -p 8000:8000 quickbite-api
 
 ## 📂 Project Structure
 ```bash
-quickbite-backend/
+Quickbite/
 │
 ├── app/
-│   ├── main.py           # Entry point
-│   ├── models/           # SQLAlchemy models
-│   ├── schemas/          # Pydantic schemas
-│   ├── routes/           # API routes
-│   ├── services/         # Business logic (WIP)
-│   ├── db/               # Database connection
-│   └── auth/             # Auth logic (WIP)
+│   ├── __init__.py
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── user.py
+│   │   ├── restaurant.py
+│   │   └── order.py
+│   ├── routes/
+│   │   ├── __init__.py
+│   │   ├── auth_routes.py
+│   │   ├── order_routes.py
+│   │   └── restaurant_routes.py
+│   ├── utils/
+│   │   ├── db.py
+│   │   ├── security.py
+│   │   └── helpers.py
+│   ├── tests/
+│   │   ├── test_auth.py
+│   │   ├── test_orders.py
+│   │   └── conftest.py
+│   └── config.py
 │
-├── tests/                # Test cases
-├── alembic/              # Migrations (placeholder)
-├── .env                  # Env vars
-├── Dockerfile            # Docker setup
-├── requirements.txt      # Dependencies
-└── README.md             # You are here
+├── app.py                     # Entry point
+├── requirements.txt
+├── Dockerfile
+├── .env.example
+├── .gitignore
+├── README.md
+└── LICENSE
 ```
 
 ## 🎯 Future Roadmap
