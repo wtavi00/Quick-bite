@@ -119,37 +119,21 @@ docker run -d -p 8000:8000 quickbite-api
 
 ## 📂 Project Structure
 ```bash
-Quickbite/
-│
+your_repo/
 ├── app/
 │   ├── __init__.py
 │   ├── models/
-│   │   ├── __init__.py
-│   │   ├── user.py
-│   │   ├── restaurant.py
-│   │   └── order.py
 │   ├── routes/
-│   │   ├── __init__.py
-│   │   ├── auth_routes.py
-│   │   ├── order_routes.py
-│   │   └── restaurant_routes.py
 │   ├── utils/
-│   │   ├── db.py
-│   │   ├── security.py
-│   │   └── helpers.py
-│   ├── tests/
-│   │   ├── test_auth.py
-│   │   ├── test_orders.py
-│   │   └── conftest.py
-│   └── config.py
-│
-├── app.py                     # Entry point
+│   └── tests/
+├── main.py
 ├── requirements.txt
-├── Dockerfile
 ├── .env.example
+├── Dockerfile
 ├── .gitignore
 ├── README.md
 └── LICENSE
+
 ```
 
 ## 🎯 Future Roadmap
