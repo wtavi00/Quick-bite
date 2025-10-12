@@ -149,6 +149,6 @@ your_repo/
 [Avijit Tarafder](https://github.com/wtavi00)
 
 ## 📄 License
-[MIT License](https://github.com/wtavi00/Quick-bite/blob/main/LICENSE)
+[License](https://github.com/wtavi00/Quick-bite/blob/main/LICENSE)
 
 
